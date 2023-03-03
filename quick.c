@@ -26,11 +26,11 @@ static int parse();
 int main() {
   int size = parse();
   int array[size];
-  int *ptr = array;
+  int *pointer = array;
   int c_val = size, c_char;
   do {
     c_char = parse();
-    *ptr++ = c_char;    
+    *pointer++ = c_char;    
   } while(--c_val > 0);
   
   sort(array, size);
